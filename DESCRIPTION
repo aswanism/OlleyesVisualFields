@@ -1,0 +1,10 @@
+Package: myVisualFieldPackage
+Type: Package
+Title: Visual Field Data Processing
+Version: 0.1.0
+Author: Azwan Ismail
+Maintainer: Azwan Ismail <muhamad.azwan.ism@gmail.com>
+Description: A package for processing and combining visual field data PDFs.
+License: GPL-3
+Imports: visualFields, pdftools, magick
+RoxygenNote: 7.3.2
