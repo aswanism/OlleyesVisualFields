@@ -4,7 +4,12 @@
 \alias{combine_visual_field_pdfs}
 \title{Combine Visual Field PDFs}
 \usage{
-combine_visual_field_pdfs(file_source, number_from_OE, file_names)
+combine_visual_field_pdfs(
+  file_source,
+  olleyes_file_csv,
+  number_from_OE,
+  file_names
+)
 }
 \arguments{
 \item{file_source}{The directory where the CSV file is located.}

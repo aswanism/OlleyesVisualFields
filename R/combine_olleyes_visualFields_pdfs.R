@@ -12,12 +12,12 @@
 #' @import visualFields
 #' @import pdftools
 #' @import magick
-combine_visual_field_pdfs <- function(file_source, number_from_OE, file_names) {
+combine_visual_field_pdfs <- function(file_source, olleyes_file_csv, number_from_OE, file_names) {
   # Set working directory
   setwd(file_source)
 
   # Read the CSV file
-  vf <- read.csv("VField Data from Olleyes CSV.csv",
+  vf <- read.csv(olleyes_file_csv,
                  colClasses = c("date" = "Date", "Variation" = "NULL",
                                 "Patient_ID" = "NULL", "First_Name" = "NULL",
                                 "Last_Name" = "NULL", "DOB" = "NULL", "Ethnicity" = "NULL",
