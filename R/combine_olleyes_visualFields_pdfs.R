@@ -49,11 +49,10 @@ combine_visual_field_pdfs <- function(file_source, olleyes_file_csv, number_from
   }
 
   # Save combined images as a new PDF file with multiple pages
-  combined_pdf_path <- "Combined_Olleyes_vFields.pdf"
+  combined_pdf_path <- "Combined_Olleyes_vFields_Power.pdf"
   image_write(image_join(combined_images), path = combined_pdf_path, format = "pdf")
 
   # Clean up temporary image and PDF files
   file.remove(c(unlist(images), pdf_files))
 
-  return(combined_pdf_path)
 }
